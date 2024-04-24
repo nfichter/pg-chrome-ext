@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "PG Essays",
+    "version": "1.0",
+    "description": "Go back to where you were before you clicked on a note.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://paulgraham.com/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
